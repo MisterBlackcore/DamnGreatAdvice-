@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Advice View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="AdviceViewController" id="BYZ-38-t0r" customClass="AdviceViewController" customModule="DamnGreatAdvice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PaG-W0-qft">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Xkx-ug-jnb">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Xkx-ug-jnb" secondAttribute="bottom" id="Jvj-Us-Iua"/>
+                                    <constraint firstItem="Xkx-ug-jnb" firstAttribute="centerX" secondItem="PaG-W0-qft" secondAttribute="centerX" id="QKV-Cy-w5F"/>
+                                    <constraint firstItem="Xkx-ug-jnb" firstAttribute="centerY" secondItem="PaG-W0-qft" secondAttribute="centerY" id="fM9-ix-9uB"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xkx-ug-jnb" secondAttribute="trailing" id="o3M-W7-VGJ"/>
+                                    <constraint firstItem="Xkx-ug-jnb" firstAttribute="top" secondItem="PaG-W0-qft" secondAttribute="top" id="t54-YY-0C7"/>
+                                    <constraint firstItem="Xkx-ug-jnb" firstAttribute="leading" secondItem="PaG-W0-qft" secondAttribute="leading" id="xIY-nb-8s1"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ОХУЕННЫЙ БЛЯТЬ СОВЕТ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iCa-U4-w9h">
+                                <rect key="frame" x="20" y="0.0" width="355" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Z5S-JT-TJ0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PaG-W0-qft" secondAttribute="trailing" id="Rlp-vs-IDY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iCa-U4-w9h" secondAttribute="trailing" id="aYl-nD-CcG"/>
+                            <constraint firstItem="iCa-U4-w9h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eX5-lD-aJt"/>
+                            <constraint firstItem="PaG-W0-qft" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="fCf-Us-TiG"/>
+                            <constraint firstAttribute="bottom" secondItem="PaG-W0-qft" secondAttribute="bottom" id="k9j-Ev-8HU"/>
+                            <constraint firstItem="iCa-U4-w9h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="kNc-ag-C5H"/>
+                            <constraint firstItem="PaG-W0-qft" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="sXE-bd-j8S"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="Xkx-ug-jnb" id="s5N-Xw-tx5"/>
+                        <outlet property="containerView" destination="PaG-W0-qft" id="ezt-Qh-5yF"/>
+                        <outletCollection property="containerViewConstraints" destination="Rlp-vs-IDY" collectionClass="NSMutableArray" id="PBI-bu-Zgx"/>
+                        <outletCollection property="containerViewConstraints" destination="fCf-Us-TiG" collectionClass="NSMutableArray" id="nrv-Zj-odc"/>
+                        <outletCollection property="containerViewConstraints" destination="sXE-bd-j8S" collectionClass="NSMutableArray" id="v0E-zF-8Ol"/>
+                        <outletCollection property="containerViewConstraints" destination="k9j-Ev-8HU" collectionClass="NSMutableArray" id="xnc-D1-OYQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="100.29985007496252"/>
+        </scene>
+    </scenes>
+</document>
